@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector Pro</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">🛡️</div>
+                <h1>Phishing Detector Pro</h1>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <div class="status-icon" id="statusIcon">⏳</div>
+                <span class="status-text" id="statusText">Checking...</span>
+            </div>
+        </div>
+
+        <!-- Current Site Info -->
+        <div class="site-info">
+            <div class="site-url" id="siteUrl">Loading...</div>
+            <div class="site-domain" id="siteDomain">Loading...</div>
+        </div>
+
+        <!-- Safety Status Card -->
+        <div class="safety-card" id="safetyCard">
+            <div class="safety-icon" id="safetyIcon">🔄</div>
+            <div class="safety-text" id="safetyText">Analyzing site safety...</div>
+            <div class="safety-details" id="safetyDetails"></div>
+        </div>
+
+        <!-- API Key Configuration -->
+        <div class="api-config">
+            <div class="config-header">
+                <h3>🔑 API Configuration</h3>
+                <button class="toggle-btn" id="toggleConfig">Show</button>
+            </div>
+            <div class="config-content" id="configContent" style="display: none;">
+                <div class="input-group">
+                    <label for="apiKeyInput">Google Safe Browsing API Key:</label>
+                    <input type="password" id="apiKeyInput" placeholder="Enter your API key">
+                    <button class="save-btn" id="saveApiKey">Save</button>
+                </div>
+                <div class="api-info">
+                    <p>Get your API key from <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google Cloud Console</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="version">v1.0.0</div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <span>Checking site safety...</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
