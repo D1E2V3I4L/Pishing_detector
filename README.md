@@ -22,6 +22,8 @@ A powerful Chrome extension that detects phishing and malware websites in real-t
 3. Enable the "Safe Browsing API" for your project
 4. Create credentials (API Key) for the Safe Browsing API
 5. Copy your API key
+6. Paste API key IN background.js
+   
 
 ### 2. Load Extension in Chrome
 
