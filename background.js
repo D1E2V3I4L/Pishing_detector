@@ -2,7 +2,7 @@
 // Handles Google Safe Browsing API calls and notifications
 
 // Google Safe Browsing API key
-const API_KEY = 'AIzaSyCeDl2teBqW0ffmORyD855iiasHxVQ8Uvk';
+const API_KEY = 'Paste safe browisng Api key';
 const SAFE_BROWSING_API_URL = 'https://safebrowsing.googleapis.com/v4/threatMatches:find';
 
 // Store current tab safety status
